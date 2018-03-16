@@ -140,6 +140,19 @@ qplot(carat, price, data=diamonds, color=clarity,  xlab="size of diamond in cara
 success_msg("ya boy!")
 ```
 
+---
+## Video Plz
+
+```yaml
+type: VideoExercise
+key: b243d75e1a
+lang: r
+xp: 50
+skills: 1
+video_link: player.vimeo.com/video/154783078
+```
+
+
 
 
 
