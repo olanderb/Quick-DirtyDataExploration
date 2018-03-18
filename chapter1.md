@@ -22,7 +22,7 @@ Let's do a scatterplot using the famous diamonds dataset.
 `@instructions`
 1.  Explore how a size (carat) affects a diamonds price by creating a  scatterplot on these two variables in the diamonds data set.  Put carat as x and price as y
 
-2.  Explore how a diamonds clarity also affects it’s price
+2.  Explore how a diamonds clarity also affects its price
 
 Remember the format is:
 
