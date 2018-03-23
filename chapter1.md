@@ -24,15 +24,14 @@ Let's do a scatterplot using the famous diamonds dataset.
 
 2.  Explore how a diamonds clarity also affects it’s price
 
-Remember the format is:
 
-qplot(x, y, data=, color=, fill=, shape=, size=, alpha=, geom=, method=, formula=, facets=, xlim=, ylim=, xlab=, ylab=, main=, sub=)
 
 `@hint`
 did you load the library ggplot?
 did specify the correct x and y values in the correct order?
 did you specify the correct data frame?
 did you specify the correct variable to fill?
+remember qplots structure ? qplot(x, y, data=, color=, fill=, shape=, size=, alpha=, geom=, method=, formula=, facets=, xlim=, ylim=, xlab=, ylab=, main=, sub=)
 
 `@pre_exercise_code`
 ```{r}
@@ -87,9 +86,6 @@ Specifically, we're going to:
 2.  add in how the cut of a diamond affects the price usng _shape_
 3.  explore changing the transparency of the graph by adjusting the _alpha_
 
-qplot(x, y, data=, color=, fill=, shape=, size=, alpha=, geom=, method=, formula=, facets=, xlim=, ylim=, xlab=, ylab=, main=, sub=)
-
-
 `@instructions`
 Adding to  the code in the last exercise
 
@@ -99,8 +95,7 @@ Adding to  the code in the last exercise
 
 
 `@hint`
-are you serious?
-
+remember qplots structure ? qplot(x, y, data=, color=, fill=, shape=, size=, alpha=, geom=, method=, formula=, facets=, xlim=, ylim=, xlab=, ylab=, main=, sub=)
 
 `@pre_exercise_code`
 ```{r}
@@ -140,18 +135,65 @@ qplot(carat, price, data=diamonds, color=clarity,  xlab="size of diamond in cara
 success_msg("ya boy!")
 ```
 
+
+
+
 ---
-## Video Plz
+## Ex 3 - Scatter again with even more options
 
 ```yaml
-type: VideoExercise
-key: b243d75e1a
-lang: r
-xp: 50
-skills: 1
-video_link: player.vimeo.com/video/154783078
+type: NormalExercise
+
+xp: 100
+
+key: 6c02af1e65
 ```
 
+  Are you getting tired of the scatter.  Let's teach a few more options and then well move on 
+
+Specifically, we're going to:
+
+1.  add facets to have another way of comparing data
+2.  change the background with a different style
+`@instructions`
+Adding to  the code in the last exercise
+
+1.  add cut to _facets_
+
+
+
+
+`@hint`
+remember qplots structure ? qplot(x, y, data=, color=, fill=, shape=, size=, alpha=, geom=, method=, formula=, facets=, xlim=, ylim=, xlab=, ylab=, main=, sub=)
+
+`@pre_exercise_code`
+```{r}
+library(ggplot2)
+```
+`@sample_code`
+```{r}
+#code from last time
+qplot(carat, price, data=diamonds, color=clarity)
+
+
+#add facet element specifying cut
+
+
+
+
+
+
+```
+`@solution`
+```{r}
+qplot(carat, price, data=diamonds, color=clarity, facets=~cut)
+
+
+```
+`@sct`
+```{r}
+success_msg("ya boy!")
+```
 
 
 
