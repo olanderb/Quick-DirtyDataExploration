@@ -143,10 +143,8 @@ success_msg("ya boy!")
 
 ```yaml
 type: NormalExercise
-
 xp: 100
-
-key: 6c02af1e65
+key: 4be3e93005
 ```
 
   Are you getting tired of the scatter plot? Hold up.  Let's teach a few more options and then well move on to other geoms.
