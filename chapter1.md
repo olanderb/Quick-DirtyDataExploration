@@ -136,15 +136,15 @@ success_msg("ya boy!")
 ```
 
 
-
-
 ---
 ## Ex 3 - Scatter again with even more options
 
 ```yaml
 type: NormalExercise
+
 xp: 100
-key: 4be3e93005
+
+key: 6c02af1e65
 ```
 
   Are you getting tired of the scatter plot? Hold up.  Let's teach a few more options and then well move on to other geoms.
@@ -198,10 +198,6 @@ qplot(carat, price, data=diamonds, color=clarity, facets=~cut, main="diamond pri
 ```{r}
 success_msg("ya boy!")
 ```
-
-
-
-
 
 
 
