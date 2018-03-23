@@ -149,17 +149,18 @@ xp: 100
 key: 6c02af1e65
 ```
 
-  Are you getting tired of the scatter.  Let's teach a few more options and then well move on 
+  Are you getting tired of the scatter plot? Hold up.  Let's teach a few more options and then well move on to other geoms.
 
 Specifically, we're going to:
 
 1.  add facets to have another way of comparing data
-2.  change the background with a different style
+2.  add a title 
+
 `@instructions`
 Adding to  the code in the last exercise
 
 1.  add cut to _facets_
-
+2.  add a title with _main_
 
 
 
@@ -179,6 +180,9 @@ qplot(carat, price, data=diamonds, color=clarity)
 #add facet element specifying cut
 
 
+#add the title "diamond prices by carat, clarity and cut"
+
+
 
 
 
@@ -187,6 +191,8 @@ qplot(carat, price, data=diamonds, color=clarity)
 `@solution`
 ```{r}
 qplot(carat, price, data=diamonds, color=clarity, facets=~cut)
+
+qplot(carat, price, data=diamonds, color=clarity, facets=~cut, main="diamond prices by carat, clarity and cut")
 
 
 ```
