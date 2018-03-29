@@ -103,7 +103,7 @@ library(ggplot2)
 `@sample_code`
 ```{r}
 #code from last time
-qplot(carat, price, data=diamonds, color=clarity)
+qplot(carat, price, data=diamonds)
 
 
 #add labels to the x and y by specifying xlab and ylab and title to main
@@ -132,7 +132,7 @@ type: NormalExercise
 lang: r
 xp: 100
 skills: 1
-key: 6e420be792
+key: bb3bd2e856
 ```
 
 Ok, we're going to add to this to show you how to add in a color arguement.
@@ -161,18 +161,75 @@ library(ggplot2)
 ```{r}
 
 #run the same code as last exercise but set the color to clarity
-qplot(carat, price, data=diamonds, color=clarity, xlab="size of diamond in carats", ylab="price of diamond in dollars", main="diamond prices and size")
+qplot(carat, price, data=diamonds, xlab="size of diamond in carats", ylab="price of diamond in dollars", main="diamond prices and size")
 
 ```
 `@solution`
 ```{r}
 
 
-qplot(carat, price, data=diamonds, color=clarity)
+qplot(carat, price, data=diamonds, xlab="size of diamond in carats", ylab="price of diamond in dollars", main="diamond prices and size", color=clarity)
+
 ```
 `@sct`
 ```{r}
 success_msg("Hey, this is cool, do you see the clear relationship between color and prices)
 ```
 
+---
+## Ex 4 - Even more Scatter Plot, adding shapes
 
+```yaml
+type: NormalExercise
+lang: r
+xp: 100
+skills: 1
+key: bb3bd2e856
+```
+
+Another option to add different dimensions is to assign a variable to _shape_ .  So lets do it.
+
+`@instructions`
+
+1.  Explore how a diamonds cut affects its price using the _shape_ arguement
+
+
+Remember the format is:
+
+qplot(x, y, data=, color=, fill=, shape=, size=, alpha=, geom=, method=, formula=, facets=, xlim=, ylim=, xlab=, ylab=, main=, sub=)
+
+
+`@hint`
+did you load the library ggplot?
+did specify the correct x and y values in the correct order?
+did you specify the correct data frame?
+did you specify the correct variable to shape?
+x
+`@pre_exercise_code`
+```{r}
+library(ggplot2)
+```
+`@sample_code`
+```{r}
+
+#run the same code as last exercise but set the shape to cut
+qplot(carat, price, data=diamonds, xlab="size of diamond in carats", ylab="price of diamond in dollars", main="diamond prices and size", color=clarity)
+
+#maybe thats too noisy, get rid of the color=clarity option and set shape to cut
+
+
+```
+`@solution`
+```{r}
+
+qplot(carat, price, data=diamonds, xlab="size of diamond in carats", ylab="price of diamond in dollars", main="diamond prices and size", color=clarity, shape=cut)
+
+qplot(carat, price, data=diamonds, xlab="size of diamond in carats", ylab="price of diamond in dollars", main="diamond prices and size", shape=cut)
+
+
+
+```
+`@sct`
+```{r}
+success_msg("Some times you have to take a little to get a little.  Putting shapes and color was messy but maybe there is another way. stay tuned.)
+```
