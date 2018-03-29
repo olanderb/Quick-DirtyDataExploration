@@ -132,7 +132,7 @@ type: NormalExercise
 lang: r
 xp: 100
 skills: 1
-key: bb3bd2e856
+key: 5fba2b11b6
 ```
 
 Ok, we're going to add to this to show you how to add in a color arguement.
@@ -184,7 +184,7 @@ type: NormalExercise
 lang: r
 xp: 100
 skills: 1
-key: bb3bd2e856
+key: 04e3e1f681
 ```
 
 Another option to add different dimensions is to assign a variable to _shape_ .  So lets do it.
