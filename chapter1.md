@@ -124,3 +124,55 @@ success_msg("you got a plot, you got a title.  let's keep going")
 ```
 
 
+---
+## Ex 3 - Again the Scatter Plot, this time with colors
+
+```yaml
+type: NormalExercise
+lang: r
+xp: 100
+skills: 1
+key: bb3bd2e856
+```
+
+Ok, we're going to add to this to show you how to add in a color arguement.
+
+`@instructions`
+
+1.  Explore how a diamonds clarity also affects its price using the _fill_ arguement
+
+
+Remember the format is:
+
+qplot(x, y, data=, color=, fill=, shape=, size=, alpha=, geom=, method=, formula=, facets=, xlim=, ylim=, xlab=, ylab=, main=, sub=)
+
+
+`@hint`
+did you load the library ggplot?
+did specify the correct x and y values in the correct order?
+did you specify the correct data frame?
+did you specify the correct variable to fill?
+x
+`@pre_exercise_code`
+```{r}
+library(ggplot2)
+```
+`@sample_code`
+```{r}
+
+#run the same code as last exercise but set the color to clarity
+qplot(carat, price, data=diamonds, color=clarity, xlab="size of diamond in carats", ylab="price of diamond in dollars", main="diamond prices and size")
+
+```
+`@solution`
+```{r}
+
+
+qplot(carat, price, data=diamonds, color=clarity)
+```
+`@sct`
+```{r}
+success_msg("Hey, this is cool, do you see the clear relationship between color and prices)
+```
+
+
