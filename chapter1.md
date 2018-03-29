@@ -132,7 +132,7 @@ type: NormalExercise
 lang: r
 xp: 100
 skills: 1
-key: bb3bd2e856
+key: f31c87b30e
 ```
 
 Ok, we're going to add to this to show you how to add in a color arguement.
@@ -184,7 +184,7 @@ type: NormalExercise
 lang: r
 xp: 100
 skills: 1
-key: bb3bd2e856
+key: 2c9c07603f
 ```
 
 Another option to add different dimensions is to assign a variable to _shape_ .  So lets do it.
@@ -243,7 +243,7 @@ type: NormalExercise
 lang: r
 xp: 100
 skills: 1
-key: bb3bd2e856
+key: c7f853bd0d
 ```
 
 Another powerful option to view dimensions is to assign a variable to _facets_ So lets do it.
@@ -300,7 +300,7 @@ type: NormalExercise
 lang: r
 xp: 100
 skills: 1
-key: bb3bd2e856
+key: bf285dea06
 ```
 
 Boxplots are under-utilized and are a great way to view a lot of information.
