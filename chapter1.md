@@ -132,7 +132,7 @@ type: NormalExercise
 lang: r
 xp: 100
 skills: 1
-key: fa269512af
+key: bb3bd2e856
 ```
 
 Ok, we're going to add to this to show you how to add in a color arguement.
@@ -184,7 +184,7 @@ type: NormalExercise
 lang: r
 xp: 100
 skills: 1
-key: 5946ce8664
+key: bb3bd2e856
 ```
 
 Another option to add different dimensions is to assign a variable to _shape_ .  So lets do it.
@@ -243,7 +243,7 @@ type: NormalExercise
 lang: r
 xp: 100
 skills: 1
-key: 060590114d
+key: bb3bd2e856
 ```
 
 Another powerful option to view dimensions is to assign a variable to _facets_ So lets do it.
@@ -290,3 +290,62 @@ qplot(carat, price, data=diamonds, xlab="size of diamond in carats", ylab="price
 ```{r}
 success_msg("Sweet.  Time for other geoms.)
 ```
+
+
+---
+## Ex 6 - Boxing with box plots
+
+```yaml
+type: NormalExercise
+lang: r
+xp: 100
+skills: 1
+key: bb3bd2e856
+```
+
+Boxplots are under-utilized and are a great way to view a lot  information.
+
+`@instructions`
+
+1.  Lets try out boxplots to see the distribution of diamond prices by diamond color 
+
+Remember the format is:
+
+qplot(x, y, data=, color=, fill=, shape=, size=, alpha=, geom=, method=, formula=, facets=, xlim=, ylim=, xlab=, ylab=, main=, sub=)
+
+
+`@hint`
+did you load the library ggplot?
+did specify the correct x and y values in the correct order?
+did you specify the correct data frame?
+did you specify the correct variable to shape?
+x
+`@pre_exercise_code`
+```{r}
+library(ggplot2)
+```
+`@sample_code`
+```{r}
+
+#this time put in x=color, y=price, data=diamonds and add geom="boxplot"
+
+
+```
+`@solution`
+```{r}
+
+
+qplot(color, price, data = diamonds, geom = "boxplot")
+
+
+```
+`@sct`
+```{r}
+success_msg("cool, but there are a lot of outliers.  what else can we do to explore this?)
+```
+
+
+
+
+
+
