@@ -132,7 +132,7 @@ type: NormalExercise
 lang: r
 xp: 100
 skills: 1
-key: bb3bd2e856
+key: fa269512af
 ```
 
 Ok, we're going to add to this to show you how to add in a color arguement.
@@ -184,7 +184,7 @@ type: NormalExercise
 lang: r
 xp: 100
 skills: 1
-key: bb3bd2e856
+key: 5946ce8664
 ```
 
 Another option to add different dimensions is to assign a variable to _shape_ .  So lets do it.
@@ -243,7 +243,7 @@ type: NormalExercise
 lang: r
 xp: 100
 skills: 1
-key: bb3bd2e856
+key: 060590114d
 ```
 
 Another powerful option to view dimensions is to assign a variable to _facets_ So lets do it.
