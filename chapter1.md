@@ -273,7 +273,6 @@ library(ggplot2)
 #run the same code as last exercise but add cut to facets with 
 qplot(carat, price, data=diamonds, xlab="size of diamond in carats", ylab="price of diamond in dollars", main="diamond prices and size", color=clarity)
 
-#maybe thats too noisy, get rid of the color=clarity option and set shape to cut
 
 
 ```
