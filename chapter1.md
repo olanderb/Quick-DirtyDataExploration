@@ -132,7 +132,7 @@ type: NormalExercise
 lang: r
 xp: 100
 skills: 1
-key: 08b707f196
+key: bb3bd2e856
 ```
 
 Ok, we're going to add to this to show you how to add in a color arguement.
@@ -173,7 +173,7 @@ qplot(carat, price, data=diamonds, xlab="size of diamond in carats", ylab="price
 ```
 `@sct`
 ```{r}
-success_msg("Hey, this is cool, do you see the clear relationship between color and prices)
+success_msg("Hey, this is cool, do you see the clear relationship between color and prices")
 ```
 
 ---
@@ -184,7 +184,7 @@ type: NormalExercise
 lang: r
 xp: 100
 skills: 1
-key: 6a3dc47f91
+key: bb3bd2e856
 ```
 
 Another option to add different dimensions is to assign a variable to _shape_ .  So lets do it.
@@ -231,7 +231,7 @@ qplot(carat, price, data=diamonds, xlab="size of diamond in carats", ylab="price
 ```
 `@sct`
 ```{r}
-success_msg("Some times you have to take a little to get a little.  Putting shapes and color was messy but maybe there is another way. stay tuned.)
+success_msg("Some times you have to take a little to get a little.  Putting shapes and color was messy but maybe there is another way. stay tuned")
 ```
 
 
@@ -243,7 +243,7 @@ type: NormalExercise
 lang: r
 xp: 100
 skills: 1
-key: 42a8a0396e
+key: bb3bd2e856
 ```
 
 Another powerful option to view dimensions is to assign a variable to _facets_ So lets do it.
@@ -288,7 +288,7 @@ qplot(carat, price, data=diamonds, xlab="size of diamond in carats", ylab="price
 ```
 `@sct`
 ```{r}
-success_msg("Sweet.  Time for other geoms.)
+success_msg("Sweet.  Time for other geoms)
 ```
 
 
@@ -300,10 +300,10 @@ type: NormalExercise
 lang: r
 xp: 100
 skills: 1
-key: b7a739e53d
+key: bb3bd2e856
 ```
 
-Boxplots are under-utilized and are a great way to view a lot  information.
+Boxplots are under-utilized and are a great way to view a lot of information.
 
 `@instructions`
 
@@ -341,10 +341,8 @@ qplot(color, price, data = diamonds, geom = "boxplot")
 ```
 `@sct`
 ```{r}
-success_msg("cool, but there are a lot of outliers.  what else can we do to explore this?)
+success_msg("cool, but there are a lot of outliers.  what else can we do to explore this?")
 ```
-
-
 
 
 
