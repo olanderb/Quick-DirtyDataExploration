@@ -132,7 +132,7 @@ type: NormalExercise
 lang: r
 xp: 100
 skills: 1
-key: bb3bd2e856
+key: 6e420be792
 ```
 
 Ok, we're going to add to this to show you how to add in a color arguement.
