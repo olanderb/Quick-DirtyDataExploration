@@ -132,7 +132,7 @@ type: NormalExercise
 lang: r
 xp: 100
 skills: 1
-key: 5fba2b11b6
+key: bb3bd2e856
 ```
 
 Ok, we're going to add to this to show you how to add in a color arguement.
@@ -184,7 +184,7 @@ type: NormalExercise
 lang: r
 xp: 100
 skills: 1
-key: 04e3e1f681
+key: bb3bd2e856
 ```
 
 Another option to add different dimensions is to assign a variable to _shape_ .  So lets do it.
@@ -232,4 +232,61 @@ qplot(carat, price, data=diamonds, xlab="size of diamond in carats", ylab="price
 `@sct`
 ```{r}
 success_msg("Some times you have to take a little to get a little.  Putting shapes and color was messy but maybe there is another way. stay tuned.)
+```
+
+
+---
+## Ex 5 - Last time we scatter .  Scatter with facets
+
+```yaml
+type: NormalExercise
+lang: r
+xp: 100
+skills: 1
+key: bb3bd2e856
+```
+
+Another powerful option to view dimensions is to assign a variable to _facets_ So lets do it.
+
+`@instructions`
+
+1.  Lets view the relationship between color, clarity, cut and price using the tricks we've learned before and _facets_ 
+
+Remember the format is:
+
+qplot(x, y, data=, color=, fill=, shape=, size=, alpha=, geom=, method=, formula=, facets=, xlim=, ylim=, xlab=, ylab=, main=, sub=)
+
+
+`@hint`
+did you load the library ggplot?
+did specify the correct x and y values in the correct order?
+did you specify the correct data frame?
+did you specify the correct variable to shape?
+x
+`@pre_exercise_code`
+```{r}
+library(ggplot2)
+```
+`@sample_code`
+```{r}
+
+#run the same code as last exercise but add cut to facets with 
+qplot(carat, price, data=diamonds, xlab="size of diamond in carats", ylab="price of diamond in dollars", main="diamond prices and size", color=clarity)
+
+#maybe thats too noisy, get rid of the color=clarity option and set shape to cut
+
+
+```
+`@solution`
+```{r}
+
+
+qplot(carat, price, data=diamonds, xlab="size of diamond in carats", ylab="price of diamond in dollars", main="diamond prices and size", color=clarity, facets=~cut)
+
+
+
+```
+`@sct`
+```{r}
+success_msg("Sweet.  Time for other geoms.)
 ```
