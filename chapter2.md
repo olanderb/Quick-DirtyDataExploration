@@ -33,7 +33,7 @@ key: 7899ccd973
 c488365619fd155e909e214b86e74159
 
 ---
-## Insert exercise title here
+## yo playa
 
 ```yaml
 type: VideoExercise
