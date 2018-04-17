@@ -287,7 +287,7 @@ qplot(carat, price, data=diamonds, xlab="size of diamond in carats", ylab="price
 ```
 `@sct`
 ```{r}
-success_msg("Sweet.  Time for other geoms)
+success_msg("Sweet.  Time for other geoms")
 ```
 
 
