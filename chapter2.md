@@ -16,7 +16,10 @@ key: 585b9887c3
 ```
 
 `@projector_key`
-c16deeabbeed2a06ae7d9658cb309b25
+course_672_22ecc89d5b43ffb2b1c4f25a87774aa1
+
+`video_link`
+//player.vimeo.com/video/160339449
 
 ---
 ## Insert exercise title here
