@@ -343,12 +343,3 @@ qplot(color, price, data = diamonds, geom = "boxplot")
 success_msg("cool, but there are a lot of outliers.  what else can we do to explore this?")
 ```
 
-## Video Exercise
-
-```yaml
-type: VideoExercise
-lang: r
-xp: 50
-video_link: "//player.vimeo.com/video/260397176"
-```
-
