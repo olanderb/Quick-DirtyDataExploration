@@ -1,5 +1,5 @@
 ---
-title: Dirty Boxing with qplot
+title: Getting Started with Scatterplots and Bar Charts
 description: >-
   In this chapter we'll teach you how to use qplot to quickly visualize your data.  Many R users use an  elegant, flexible and powerful package called 'ggplot' but mastering this can be overwhelming at first.  Instead we're going to focus on a short-cut function called qplot()  which can be used to create the most common types of graphs and might fit your needs when making simple graphics. You'll probably be suprised how powerful it is and may be even inspired to go up a weight class later with ggplot.
 
