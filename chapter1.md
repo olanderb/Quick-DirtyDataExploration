@@ -1,7 +1,7 @@
 ---
 title: Dirty Boxing with qplot
 description: >-
-  In this chapter we'll teach you how to use qplot to win a fight.  Mastering the ggplot2 language can be overwhelming at first and there is a helper function called qplot() (q for quick plot) which can be used to create the most common types of graphs.  You'll probably be suprised how powerful it is and may be even inspired to go up a weight class later with ggplot.
+  In this chapter we'll teach you how to use qplot to quickly visualize your data.  Many R users use an  elegant, flexible and powerful package called 'ggplot' but mastering this can be overwhelming at first.  Instead we're going to focus on a short-cut function called qplot()  which can be used to create the most common types of graphs and might fit your needs when making simple graphics. You'll probably be suprised how powerful it is and may be even inspired to go up a weight class later with ggplot.
 
 
 ---
@@ -77,7 +77,7 @@ xp: 100
 key: 6c02af1e65
 ```
 
-Now we're going to add a title and x and y axis labels to the scatter with _main_ , _xlab_ and _ylab_
+Now we're going to add a titles and x and y axis labels to the scatter with _main_ , _sub_,  _xlab_ and _ylab_
 
 Remember the format is:
 
@@ -87,7 +87,8 @@ qplot(x, y, data=, color=, fill=, shape=, size=, alpha=, geom=, method=, formula
 `@instructions`
 Adding to  the code in the last exercise
 
-1. add the title "diamond prices and size" to the scatterplot with _main_
+1. add the mian title "diamond prices and size" to the scatterplot with _main_
+2. add the subtitle "subtitle here" with _sub_
 2. add labels to the x and y axis using _xlab_ and _ylab_ .  Label the x axis "size of diamond in carats" and label the y axis "price of diamond in dollars"
 
 
@@ -135,7 +136,7 @@ skills: 1
 key: f31c87b30e
 ```
 
-Ok, we're going to add to this to show you how to add in a color arguement.
+Ok, we're going to add to this to show you how to add in a color arguement to further add your analysis and presentation.
 
 `@instructions`
 
@@ -161,7 +162,7 @@ library(ggplot2)
 ```{r}
 
 #run the same code as last exercise but set the color to clarity
-qplot(carat, price, data=diamonds, xlab="size of diamond in carats", ylab="price of diamond in dollars", main="diamond prices and size")
+qplot(carat, price, data=diamonds, xlab="size of diamond in carats", ylab="price of diamond in dollars", main="diamond prices and size", sub="subtitle here")
 
 ```
 `@solution`
@@ -187,7 +188,7 @@ skills: 1
 key: 2c9c07603f
 ```
 
-Another option to add different dimensions is to assign a variable to _shape_ .  So lets do it.
+Another option to add different dimensions is to assign a variables to _shape_ or to assign shapes.  So lets do it.
 
 `@instructions`
 
@@ -292,7 +293,7 @@ success_msg("Sweet.  Time for other geoms")
 
 
 ---
-## Ex 6 - Boxing with box plots
+## Ex 6 - Still keeping it easy - Bar Charts.
 
 ```yaml
 type: NormalExercise
@@ -300,6 +301,58 @@ lang: r
 xp: 100
 skills: 1
 key: bf285dea06
+```
+
+Boxplots are under-utilized and are a great way to view a lot of information.
+
+`@instructions`
+
+1.  Lets try out boxplots to see the distribution of diamond prices by diamond color 
+
+Remember the format is:
+
+qplot(x, y, data=, color=, fill=, shape=, size=, alpha=, geom=, method=, formula=, facets=, xlim=, ylim=, xlab=, ylab=, main=, sub=)
+
+
+`@hint`
+did you load the library ggplot?
+did specify the correct x and y values in the correct order?
+did you specify the correct data frame?
+did you specify the correct variable to shape?
+x
+`@pre_exercise_code`
+```{r}
+library(ggplot2)
+```
+`@sample_code`
+```{r}
+
+#this time put in x=color, y=price, data=diamonds and add geom="boxplot"
+
+
+```
+`@solution`
+```{r}
+
+
+qplot(color, price, data = diamonds, geom = "boxplot")
+
+
+```
+`@sct`
+```{r}
+success_msg("cool, but there are a lot of outliers.  what else can we do to explore this?")
+```
+
+---
+## Ex 7 - Boxing with box plots
+
+```yaml
+type: NormalExercise
+lang: r
+xp: 100
+skills: 1
+key: d16822aadc
 ```
 
 Boxplots are under-utilized and are a great way to view a lot of information.
