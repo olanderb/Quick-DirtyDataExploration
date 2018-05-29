@@ -1,5 +1,5 @@
 ---
-title       : Some exercises to make your strong    
+title       : Some exercises to make you strong    
 description : Here are some exercises
 ---
 ## Exercise 1
