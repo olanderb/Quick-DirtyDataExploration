@@ -1,3 +1,3 @@
 ---
-title       : Insert the chapter title here
-description : Insert the chapter description here
+title       : Themes and customizing graphs
+description : Here you'll learn how to make your stuff nicer

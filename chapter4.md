@@ -1,3 +1,3 @@
 ---
-title       : Insert the chapter title here
+title       : Some vizualization tips and best best practices
 description : Insert the chapter description here
