@@ -1,5 +1,5 @@
 ---
-title       : Some vizualization tips and best best practices
+title       : Some vizualization tips and best practices
 description : Insert the chapter description here
 ---
 ## First Exercise
