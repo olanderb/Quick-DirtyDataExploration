@@ -303,11 +303,14 @@ skills: 1
 key: bf285dea06
 ```
 
-Boxplots are under-utilized and are a great way to view a lot of information.
+We're going use a new data set and a barchart to practice and build on some of the options we've been practicing.  If you thought buidling a scatterplot was easy, building a bar chart was even easier.  If you only supply one variable qplot by default builds a bar chart. SO Lets build some easy barcharts to explore WFP's mVAM data 
 
 `@instructions`
 
-1.  Lets try out boxplots to see the distribution of diamond prices by diamond color 
+1.  Get a feel for the data set using str()
+2.  Create a barchart of the number of survey respondents by interview language by supplying and x value and the dataset
+3.  Add the region (adm1_name) to facets to view the number of resondents by interview language by region
+
 
 Remember the format is:
 
@@ -327,7 +330,13 @@ library(ggplot2)
 `@sample_code`
 ```{r}
 
-#this time put in x=color, y=price, data=diamonds and add geom="boxplot"
+#explore the data set 012018_GIN_mVAM 
+
+
+#ecreate a barchart of the number of survey respondents by interview language "Langue"
+
+
+#Add the region "ADM1_NAME" to facets to the plot above to  view the number of resondents by interview language by region
 
 
 ```
