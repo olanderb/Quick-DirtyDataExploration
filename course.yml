@@ -10,3 +10,5 @@ programming_language: r
 from: r-base-prod:30
 datasets:
   README.md: Readme
+  diamonds.csv: diamonds
+  GIN_mVAM_012018.csv: GIN_mVAM_012018
