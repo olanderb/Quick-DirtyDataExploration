@@ -34,7 +34,7 @@ did you specify the correct data frame?
 
 `@pre_exercise_code`
 ```{r}
-library(ggplot2)
+
 ```
 `@sample_code`
 ```{r}
