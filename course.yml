@@ -9,6 +9,5 @@ description: warning - this might be the most fun part of the course and here we
 programming_language: r
 from: r-base-prod:30
 datasets:
+  GIN_mVAM_012018.csv: Gin mvam 012018
   README.md: Readme
-  diamonds.csv: diamonds
-  GIN_mVAM_012018.csv: GIN_mVAM_012018
