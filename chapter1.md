@@ -326,6 +326,7 @@ x
 `@pre_exercise_code`
 ```{r}
 library(ggplot2)
+GIN_mVAM_012018 <- read.csv("https://assets.datacamp.com/production/repositories/2626/datasets/9d1175b385139d6d8c09241908a9e9f5166fe528/GIN_mVAM_012018.csv")
 ```
 `@sample_code`
 ```{r}
