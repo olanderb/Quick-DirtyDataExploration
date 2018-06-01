@@ -1,7 +1,7 @@
 ---
 title: Getting Started with Scatterplots and Bar Charts
 description: >-
-  In this chapter we'll teach you how to use qplot to quickly visualize your data.  Many R users use an  elegant, flexible and powerful package called 'ggplot' but mastering this can be overwhelming at first.  Instead we're going to focus on a short-cut function called qplot()  which can be used to create the most common types of graphs and might fit your needs when making simple graphics. You'll probably be suprised how powerful it is and may be even inspired to go up a weight class later with ggplot.
+  In this chapter we'll introduce you to the basic options of qplot and creae two different types of plots - scatterplots and bar charts.
 
 
 ---
@@ -364,12 +364,12 @@ skills: 1
 key: '2905399838'
 ```
 
-Now we can explore options for colors.  As we explored last time we can assign colors to a variable.  Also we can assign colors.  We can also set the outline color and not the 
+Now we can explore options for colors.  As we explored last time we can assign colors to a variable.  Also we can assign specific colors.  We can also set the outline color and not the fill or vice versa or both.
 
 `@instructions`
 
-1.  Using the sample code from last exercise, set the color to the variable Langue
-2.  
+1.  Using the sample code from last exercise, set the fill color to the variable Langue
+2.  Using the sample code above, set the fill color to the color "Red"  - remember in qplot you have to you the I() arguement.
 3.  
 
 
@@ -392,13 +392,13 @@ GIN_mVAM_012018 <- read.csv("https://assets.datacamp.com/production/repositories
 `@sample_code`
 ```{r}
 
-#assign the variable Langue to the color option in the code below
+#assign the variable Langue to the fill  option in the code below
 qplot(Langue, data = GIN_mVAM_012018, facets=~ADM1_NAME)
 
-#assign the variable Langue to the color option in the code below
+#assign the color "Red"  to the fill color option in the code below
 
 
-#fill and color  - 
+#fill and color  - use the code above and set the fill to "RED" and the color to "BLUE"
 
 
 ```
