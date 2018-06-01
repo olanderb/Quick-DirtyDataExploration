@@ -331,10 +331,10 @@ GIN_mVAM_012018 <- read.csv("https://assets.datacamp.com/production/repositories
 `@sample_code`
 ```{r}
 
-#explore the data set 012018_GIN_mVAM 
+#explore the data set 012018_GIN_mVAM (which is already loaded for you) 
 
 
-#ecreate a barchart of the number of survey respondents by interview language "Langue"
+#create a barchart of the number of survey respondents by interview language "Langue"
 
 
 #Add the region "ADM1_NAME" to facets to the plot above to  view the number of resondents by interview language by region
@@ -353,9 +353,71 @@ qplot(color, price, data = diamonds, geom = "boxplot")
 ```{r}
 success_msg("cool, but there are a lot of outliers.  what else can we do to explore this?")
 ```
+---
+## Ex 7 -  Bar Charts II - playing with color options.
+
+```yaml
+type: NormalExercise
+lang: r
+xp: 100
+skills: 1
+key: '2905399838'
+```
+
+Now we can explore options for colors.  As we explored last time we can assign colors to a variable.  Also we can assign colors.  We can also set the outline color and not the 
+
+`@instructions`
+
+1.  Using the sample code from last exercise, set the color to the variable Langue
+2.  
+3.  
+
+
+Remember the format is:
+
+qplot(x, y, data=, color=, fill=, shape=, size=, alpha=, geom=, method=, formula=, facets=, xlim=, ylim=, xlab=, ylab=, main=, sub=)
+
+
+`@hint`
+did you load the library ggplot?
+did specify the correct x and y values in the correct order?
+did you specify the correct data frame?
+did you specify the correct variable to shape?
+x
+`@pre_exercise_code`
+```{r}
+library(ggplot2)
+GIN_mVAM_012018 <- read.csv("https://assets.datacamp.com/production/repositories/2626/datasets/9d1175b385139d6d8c09241908a9e9f5166fe528/GIN_mVAM_012018.csv")
+```
+`@sample_code`
+```{r}
+
+#assign the variable Langue to the color option in the code below
+qplot(Langue, data = GIN_mVAM_012018, facets=~ADM1_NAME)
+
+#assign the variable Langue to the color option in the code below
+
+
+#fill and color  - 
+
+
+```
+`@solution`
+```{r}
+
+
+qplot(color, price, data = diamonds, geom = "boxplot")
+
+
+```
+`@sct`
+```{r}
+success_msg("cool, but there are a lot of outliers.  what else can we do to explore this?")
+```
+
 
 ---
-## Ex 7 - Boxing with box plots
+## Ex 8 - Boxing with box plots
 
 ```yaml
 type: NormalExercise
@@ -397,7 +459,6 @@ library(ggplot2)
 ```{r}
 
 
-qplot(color, price, data = diamonds, geom = "boxplot")
 
 
 ```
