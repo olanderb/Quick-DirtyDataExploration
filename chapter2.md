@@ -1,7 +1,7 @@
 ---
 title: Learning different geoms
 description: >-
-  Im quite happy this works
+  Im quite happy the video works
 
 ---
 ## Video Exercise
