@@ -1,6 +1,6 @@
 ---
 title       : Themes and customizing graphs
-description : Here you'll learn how to make your stuff nicer
+description : Here you'll learn how to make your stuff nicer and learn how to add in more power from ggplot2 
 
 ---
 ## First exercise
