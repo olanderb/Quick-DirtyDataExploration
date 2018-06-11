@@ -1,5 +1,5 @@
 ---
-title: Getting Started with Scatterplots and Bar Charts
+title: Getting Started in Qplot with Scatterplots and Bar Charts
 description: >-
   In this chapter we'll introduce you to the basic options of qplot and creae two different types of plots - scatterplots and bar charts.
 
@@ -15,15 +15,15 @@ skills: 1
 key: bb3bd2e856
 ```
 
-We're going to do the same even though it might be the least used type of graphic in humanitarian work.  Why are  we starting off with it?  Because it's so easy!  Qplot produces a scatterplot by default when supplying an an x and a y. 
+A lot of data viz courses start off with the scatter plot.  We're going to do the same even though it isn't so frequently used in humanitarian data analysis.  Why are  we starting off with it?  Because it's so easy and powerful!  Qplot produces a scatterplot by default when supplying an x and a y. 
 
 Let's do a scatterplot using the famous diamonds dataset.
 
 `@instructions`
-1.  Explore how a size (carat) affects a diamonds price by creating a  scatterplot on these two variables in the diamonds data set.  Put carat as x and price as y
+1.  Explore how a size (carat) affects a diamonds price by creating a scatterplot on these two variables in the diamonds dataset.  Put carat as x and price as y
 
 
-Remember the format is:
+Remember qplots basic format is:
 
 qplot(x, y, data=, color=, fill=, shape=, size=, alpha=, geom=, method=, formula=, facets=, xlim=, ylim=, xlab=, ylab=, main=, sub=)
 
@@ -77,9 +77,10 @@ xp: 100
 key: 6c02af1e65
 ```
 
-Now we're going to add a titles and x and y axis labels to the scatter with _main_ , _sub_,  _xlab_ and _ylab_
+Now we're going to add a title and x and y axis labels to the scatter with _main_ , _xlab_ and _ylab_
+This may not seem like a big deal, but using a little code to build the titles and labels can save you a little time later down the road.
 
-Remember the format is:
+Remember qplots basic format is:
 
 qplot(x, y, data=, color=, fill=, shape=, size=, alpha=, geom=, method=, formula=, facets=, xlim=, ylim=, xlab=, ylab=, main=, sub=)
 
@@ -88,13 +89,12 @@ qplot(x, y, data=, color=, fill=, shape=, size=, alpha=, geom=, method=, formula
 Adding to  the code in the last exercise
 
 1. add the mian title "diamond prices and size" to the scatterplot with _main_
-2. add the subtitle "subtitle here" with _sub_
 2. add labels to the x and y axis using _xlab_ and _ylab_ .  Label the x axis "size of diamond in carats" and label the y axis "price of diamond in dollars"
 
 
 
 `@hint`
-are you serious?
+its pretty easy so you shouldnt need a hint
 
 
 `@pre_exercise_code`
@@ -136,14 +136,15 @@ skills: 1
 key: f31c87b30e
 ```
 
-Ok, we're going to add to this to show you how to add in a color arguement to further add your analysis and presentation.
+Ok, we're going to add to this to show you how to add in a color arguement to add another dimension to your analysis and presentation.  
+
 
 `@instructions`
 
 1.  Explore how a diamonds clarity also affects its price using the _fill_ arguement
 
 
-Remember the format is:
+Remember qplots basic format is:
 
 qplot(x, y, data=, color=, fill=, shape=, size=, alpha=, geom=, method=, formula=, facets=, xlim=, ylim=, xlab=, ylab=, main=, sub=)
 
@@ -162,7 +163,7 @@ library(ggplot2)
 ```{r}
 
 #run the same code as last exercise but set the color to clarity
-qplot(carat, price, data=diamonds, xlab="size of diamond in carats", ylab="price of diamond in dollars", main="diamond prices and size", sub="subtitle here")
+qplot(carat, price, data=diamonds, xlab="size of diamond in carats", ylab="price of diamond in dollars", main="diamond prices and size")
 
 ```
 `@solution`
@@ -174,7 +175,7 @@ qplot(carat, price, data=diamonds, xlab="size of diamond in carats", ylab="price
 ```
 `@sct`
 ```{r}
-success_msg("Hey, this is cool, do you see the clear relationship between color and prices")
+success_msg("Hey, this is cool, do you see the clear relationship between color and prices?  ")
 ```
 
 ---
