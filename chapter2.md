@@ -1,25 +1,28 @@
 ---
-title       : This is chapter with video exercise
-description : Yes! This chapter contains a video!
----
-
-## Stock Video Exercise
-
-```yaml
-type: VideoExercise
-lang: r
-xp: 50
-video_link: //player.vimeo.com/video/160339466
-video_hls: //videos.datacamp.com/transcoded/672_intermediate_r/v2/hls-ch1_1.master.m3u8
-key: d81d7656a7
-```
-
----
 title: Learning different geoms
 description: >-
   Im quite happy the video works
 
 ---
+
+
+
+## Stock Video Exercise
+
+```yaml
+type: VideoExercise 
+lang: r
+xp: 50 
+video_link: //player.vimeo.com/video/160339466
+video_hls: //videos.datacamp.com/transcoded/672_intermediate_r/v2/hls-ch1_1.master.m3u8
+```
+
+
+
+
+
+
+
 ## Hall & Oates Video Exercise 
 
 ```yaml
@@ -29,6 +32,7 @@ xp: 50
 video_link: "//player.vimeo.com/video/260397176"
 key: 4dc7501f08
 ```
+
 
 
 ---
