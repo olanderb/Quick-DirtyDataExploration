@@ -141,8 +141,9 @@ Ok, we're going to add to this to show you how to add in a color arguement to ad
 
 `@instructions`
 
-1.  Explore how a diamonds clarity also affects its price using the _fill_ arguement
+1.  Explore how a diamonds clarity also affects its price using the _color_ arguement
 
+*for the astitute users out there, we will touch on the difference between color and fill later on 
 
 Remember qplots basic format is:
 
@@ -189,7 +190,7 @@ skills: 1
 key: 2c9c07603f
 ```
 
-Another option to add different dimensions is to assign a variables to _shape_ or to assign shapes.  So lets do it.
+Another option to add different dimensions is to assign a variables to _shape_.  Let's try it.
 
 `@instructions`
 
@@ -217,7 +218,7 @@ library(ggplot2)
 #run the same code as last exercise but set the shape to cut
 qplot(carat, price, data=diamonds, xlab="size of diamond in carats", ylab="price of diamond in dollars", main="diamond prices and size", color=clarity)
 
-#maybe thats too noisy, get rid of the color=clarity option and set shape to cut
+#well maybe that is too much information, get rid of the color=clarity option and set shape to cut
 
 
 ```
