@@ -371,16 +371,19 @@ key: '2905399838'
 
 Now we can explore more options for colors.  As we explored in the scatterplot exercise we can assign colors to a variable, but we can also  assign specific colors instead of having qplot picking the for us.  We can also set the outline color and not the fill or vice versa or both and we can also adjust the transparency.  Here is a little explanation of the 3 arguements we will be exploring:
 
-For line plots, _color_ associates levels of a variable with line color. For density and box plots, _fill_ associates fill colors with a variable. 
+For line plots, _color_ associates levels of a variable with line color. For density and box plots, _fill_ associates fill colors with a variable. In a bar chart like we are creating, _color_ is the outline color and _fill_ is, well, the fill color.  Seeeing is believing.
 
-_alpha_: Alpha sets the transparency for overlapping elements expressed as a fraction between 0 (complete transparency) and 1 (complete opacity).
+_alpha_: Alpha sets the transparency expressed as a fraction between 0 (complete transparency) and 1 (complete opacity).  It might seem like simply aesthetics, but this could be quite useful if you have overlapping elements (think of a lot of bars on top of each other.  
 
-One more thing, to assign specific colors and transparencies, you need to use the I() in the arguments.   The I() function inhibits the interpretation of its arguments. 
+One more thing, to assign specific colors and transparencies rather than have qplot guess that it is some variable , you need to use the I() in the arguments.   The I() function inhibits the interpretation of its arguments. 
 
 `@instructions`
 
 1.  Using the sample code from last exercise, set the fill color to the variable Langue
-2.  Using the sample code above, set the fill color to the color "Red"  - remember in qplot you have to you the I() arguement.
+2.  Set the fill color to the color "Red"  - remember in qplot you have to you the I() arguement.
+3.  Set the fill color to the color "Red"  and the fill color to "Blue" - remember in qplot you have to you the I() arguement.
+4.  Keeping everything the same, set the transparency with _alpha_ to 0.1
+5.  Just to see, set the transparency with _alpha_ 0.5
 
 
 
@@ -410,6 +413,12 @@ qplot(Langue, data = GIN_mVAM_012018, facets=~ADM1_NAME)
 
 
 #fill and color  - use the code above and set the fill to "RED" and the color to "BLUE"
+
+
+#alpha - Keeping everything the same, set the transparency with _alpha_ to 0.1
+
+
+#alpha - just to see, set the transparency to 0.5
 
 
 ```
