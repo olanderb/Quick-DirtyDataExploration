@@ -1,4 +1,4 @@
-title: Quick & Dirty Data Visualization in R
+title: Data Science for HumanitaRians: Quick & Dirty Data Visualization with Qplot
 description: Here we will teach you how to use qplot to quickly visualize your data.  Many R users use an elegant,
   flexible and powerful package called 'ggplot' but mastering this can be overwhelming
   at first.  Instead we're going to focus on a short-cut function of ggplot called qplot() which
