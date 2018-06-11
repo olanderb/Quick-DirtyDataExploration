@@ -1,11 +1,8 @@
-title: Quick & Dirty Data Visualization
-description: warning - this might be the most fun part of the course and here we'll
-  teach you how to use qplot to quickly visualize your data.  Many R users use an  elegant,
+title: Quick & Dirty Data Visualization in R
+description: Here we will teach you how to use qplot to quickly visualize your data.  Many R users use an elegant,
   flexible and powerful package called 'ggplot' but mastering this can be overwhelming
-  at first.  Instead we're going to focus on a short-cut function called qplot()  which
-  can be used to create the most common types of graphs and might fit your needs when
-  making simple graphics. You'll probably be suprised how powerful it is and may be
-  even inspired to go up a weight class later with ggplot.
+  at first.  Instead we're going to focus on a short-cut function of ggplot called qplot() which
+  can be used to create the most common types of graphs and simple analysis.  Along the way you will probably be suprised how powerful and simple qplot is and at the end you may be even inspired to level up with the broader and deeper universe of  ggplot.
 programming_language: r
 from: r-base-prod:30
 datasets:
