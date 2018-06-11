@@ -234,7 +234,7 @@ qplot(carat, price, data=diamonds, xlab="size of diamond in carats", ylab="price
 ```
 `@sct`
 ```{r}
-success_msg("Some times you have to take a little to get a little.  Putting shapes and color was messy but maybe there is another way. stay tuned")
+success_msg("Hmm, too busy to tell us very much.  Putting shapes and color was messy but maybe there is another way to look at multiple dimensions. next up")
 ```
 
 
@@ -249,11 +249,15 @@ skills: 1
 key: c7f853bd0d
 ```
 
-Another powerful option to view dimensions is to assign a variable to _facets_ So lets do it.
+Another powerful option to view dimensions is to assign a variable to _facets_ .
+
+We'll get into the details of facets later, for now you just need to know that you to add one ~ and the name of the variable you want to facet. so to facet by clarity we would insert the argument "facet=~clarity"
+
+Better to do it than talk about it.  Let's go.
 
 `@instructions`
 
-1.  Lets view the relationship between color, clarity, cut and price using the tricks we've learned before and _facets_ 
+1.  Lets view the relationship between color, clarity, cut and price using the options we've learned up to now and  we've learned before and _facets_ 
 
 Remember the format is:
 
@@ -273,7 +277,7 @@ library(ggplot2)
 `@sample_code`
 ```{r}
 
-#run the same code as last exercise but add cut to facets with 
+#run the same code from the before and add cut to the facet arguement
 qplot(carat, price, data=diamonds, xlab="size of diamond in carats", ylab="price of diamond in dollars", main="diamond prices and size", color=clarity)
 
 
@@ -290,9 +294,8 @@ qplot(carat, price, data=diamonds, xlab="size of diamond in carats", ylab="price
 ```
 `@sct`
 ```{r}
-success_msg("Sweet.  Time for other geoms")
+success_msg("Sweet.  let's use bar charts")
 ```
-
 
 ---
 ## Ex 6 - Still keeping it easy - Bar Charts.
@@ -333,7 +336,7 @@ GIN_mVAM_012018 <- read.csv("https://assets.datacamp.com/production/repositories
 `@sample_code`
 ```{r}
 
-#explore the data set 012018_GIN_mVAM (which is already loaded for you) 
+#explore the data set GIN_mVAM_012018 (which is already loaded for you) 
 
 
 #create a barchart of the number of survey respondents by interview language "Langue"
@@ -356,7 +359,7 @@ qplot(color, price, data = diamonds, geom = "boxplot")
 success_msg("cool, but there are a lot of outliers.  what else can we do to explore this?")
 ```
 ---
-## Ex 7 -  Bar Charts II - playing with color options.
+## Ex 7 -  Bar Charts II - playing with color, fill and transparency options.
 
 ```yaml
 type: NormalExercise
@@ -366,13 +369,19 @@ skills: 1
 key: '2905399838'
 ```
 
-Now we can explore options for colors.  As we explored last time we can assign colors to a variable.  Also we can assign specific colors.  We can also set the outline color and not the fill or vice versa or both.
+Now we can explore more options for colors.  As we explored in the scatterplot exercise we can assign colors to a variable, but we can also  assign specific colors instead of having qplot picking the for us.  We can also set the outline color and not the fill or vice versa or both and we can also adjust the transparency.  Here is a little explanation of the 3 arguements we will be exploring:
+
+For line plots, _color_ associates levels of a variable with line color. For density and box plots, _fill_ associates fill colors with a variable. 
+
+_alpha_: Alpha sets the transparency for overlapping elements expressed as a fraction between 0 (complete transparency) and 1 (complete opacity).
+
+One more thing, to assign specific colors and transparencies, you need to use the I() in the arguments.   The I() function inhibits the interpretation of its arguments. 
 
 `@instructions`
 
 1.  Using the sample code from last exercise, set the fill color to the variable Langue
 2.  Using the sample code above, set the fill color to the color "Red"  - remember in qplot you have to you the I() arguement.
-3.  
+
 
 
 Remember the format is:
@@ -417,55 +426,4 @@ qplot(color, price, data = diamonds, geom = "boxplot")
 success_msg("cool, but there are a lot of outliers.  what else can we do to explore this?")
 ```
 
-
----
-## Ex 8 - Boxing with box plots
-
-```yaml
-type: NormalExercise
-lang: r
-xp: 100
-skills: 1
-key: d16822aadc
-```
-
-Boxplots are under-utilized and are a great way to view a lot of information.
-
-`@instructions`
-
-1.  Lets try out boxplots to see the distribution of diamond prices by diamond color 
-
-Remember the format is:
-
-qplot(x, y, data=, color=, fill=, shape=, size=, alpha=, geom=, method=, formula=, facets=, xlim=, ylim=, xlab=, ylab=, main=, sub=)
-
-
-`@hint`
-did you load the library ggplot?
-did specify the correct x and y values in the correct order?
-did you specify the correct data frame?
-did you specify the correct variable to shape?
-x
-`@pre_exercise_code`
-```{r}
-library(ggplot2)
-```
-`@sample_code`
-```{r}
-
-#this time put in x=color, y=price, data=diamonds and add geom="boxplot"
-
-
-```
-`@solution`
-```{r}
-
-
-
-
-```
-`@sct`
-```{r}
-success_msg("cool, but there are a lot of outliers.  what else can we do to explore this?")
-```
 
