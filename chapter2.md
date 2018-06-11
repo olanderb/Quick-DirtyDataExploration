@@ -19,10 +19,6 @@ video_hls: //videos.datacamp.com/transcoded/672_intermediate_r/v2/hls-ch1_1.mast
 
 
 
-
-
-
-
 ## Hall & Oates Video Exercise 
 
 ```yaml
