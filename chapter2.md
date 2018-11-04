@@ -1,37 +1,22 @@
 ---
-title: Learning different geoms
-description: >-
-  Im quite happy the video works
-
+title: 'Learning different geoms'
+description: 'Im quite happy the video works'
 ---
-
-
 
 ## Stock Video Exercise
 
 ```yaml
-type: VideoExercise 
+type: VideoExercise
+key: 4dc7501f08
 lang: r
-xp: 50 
-video_link: //player.vimeo.com/video/160339466
+xp: 50
+video_link: //player.vimeo.com/video/260397176
 video_hls: //videos.datacamp.com/transcoded/672_intermediate_r/v2/hls-ch1_1.master.m3u8
 ```
 
 
-
-## Hall & Oates Video Exercise 
-
-```yaml
-type: VideoExercise
-lang: r
-xp: 50
-video_link: "//player.vimeo.com/video/260397176"
-key: 4dc7501f08
-```
-
-
-
 ---
+
 ## Boxplots
 
 ```yaml
@@ -43,9 +28,12 @@ skills: 1
 ```
 
 
+
 `@instructions`
 
+
 `@hint`
+
 
 `@pre_exercise_code`
 ```{r}
@@ -68,6 +56,7 @@ skills: 1
 ```
 
 ---
+
 ## Histogram
 
 ```yaml
@@ -79,9 +68,12 @@ skills: 1
 ```
 
 
+
 `@instructions`
 
+
 `@hint`
+
 
 `@pre_exercise_code`
 ```{r}
@@ -104,6 +96,7 @@ skills: 1
 ```
 
 ---
+
 ## Density
 
 ```yaml
@@ -115,9 +108,12 @@ skills: 1
 ```
 
 
+
 `@instructions`
 
+
 `@hint`
+
 
 `@pre_exercise_code`
 ```{r}
@@ -140,6 +136,7 @@ skills: 1
 ```
 
 ---
+
 ## Smooth
 
 ```yaml
@@ -151,9 +148,12 @@ skills: 1
 ```
 
 
+
 `@instructions`
 
+
 `@hint`
+
 
 `@pre_exercise_code`
 ```{r}
@@ -176,6 +176,7 @@ skills: 1
 ```
 
 ---
+
 ## Jitter
 
 ```yaml
@@ -187,9 +188,12 @@ skills: 1
 ```
 
 
+
 `@instructions`
 
+
 `@hint`
+
 
 `@pre_exercise_code`
 ```{r}
@@ -212,6 +216,7 @@ skills: 1
 ```
 
 ---
+
 ## Points again
 
 ```yaml
@@ -223,9 +228,12 @@ skills: 1
 ```
 
 
+
 `@instructions`
 
+
 `@hint`
+
 
 `@pre_exercise_code`
 ```{r}
@@ -248,6 +256,7 @@ skills: 1
 ```
 
 ---
+
 ## Bars again
 
 ```yaml
@@ -259,9 +268,12 @@ skills: 1
 ```
 
 
+
 `@instructions`
 
+
 `@hint`
+
 
 `@pre_exercise_code`
 ```{r}

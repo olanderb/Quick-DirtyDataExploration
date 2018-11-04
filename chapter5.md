@@ -1,7 +1,8 @@
 ---
-title       : Some exercises to make you strong    
-description : Here are some exercises
+title: 'Some exercises to make you strong'
+description: 'Here are some exercises'
 ---
+
 ## Exercise 1
 
 ```yaml
@@ -13,9 +14,12 @@ skills: 1
 ```
 
 
+
 `@instructions`
 
+
 `@hint`
+
 
 `@pre_exercise_code`
 ```{r}

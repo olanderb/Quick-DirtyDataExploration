@@ -1,7 +1,8 @@
 ---
-title       : Some vizualization tips and best practices
-description : Insert the chapter description here
+title: 'Some vizualization tips and best practices'
+description: 'Insert the chapter description here'
 ---
+
 ## First Exercise
 
 ```yaml
@@ -13,9 +14,12 @@ skills: 1
 ```
 
 
+
 `@instructions`
 
+
 `@hint`
+
 
 `@pre_exercise_code`
 ```{r}
